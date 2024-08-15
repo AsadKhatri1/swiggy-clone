@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Card from "./Card";
 
-const TopRestaurant = () => {
+const Online = () => {
   const [slide, setSlide] = useState(0);
   const [data, setData] = useState([]);
   const restaurants = [
@@ -189,23 +189,11 @@ const TopRestaurant = () => {
   return (
     <div className="max-w-[1200px] mx-auto">
       <div className="flex items-center justify-between w-full mt-5">
-        <div className="font-bold text-3xl">Top Restaurants</div>
-        <div className="flex ">
-          <div
-            onClick={prevSlide}
-            className="cursor-pointer w-[30px] h-[30px] bg-gray-200 rounded-full mx-2 flex justify-center items-center"
-          >
-            <FaArrowLeft />
-          </div>
-          <div
-            onClick={nextSlide}
-            className=" cursor-pointer w-[30px] h-[30px] bg-gray-200 rounded-full mx-2 flex justify-center items-center"
-          >
-            <FaArrowRight />
-          </div>
+        <div className="font-bold text-3xl">
+          Restaurants With Online Delivery
         </div>
       </div>
-      <div className="flex  my-8 gap-4 overflow-hidden duration-500">
+      <div className="flex  my-8 gap-4 duration-500">
         {data.map((d, i) => {
           return (
             <Card
@@ -221,4 +209,4 @@ const TopRestaurant = () => {
   );
 };
 
-export default TopRestaurant;
+export default Online;

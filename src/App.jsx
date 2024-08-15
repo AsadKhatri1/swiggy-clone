@@ -5,6 +5,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Mind from "./components/Mind";
 import TopRestaurant from "./components/TopRestaurant";
+import Online from "./components/Online";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Mind />
       <TopRestaurant />
+      <Online />
     </>
   );
 }
