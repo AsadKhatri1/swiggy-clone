@@ -205,16 +205,9 @@ const TopRestaurant = () => {
           </div>
         </div>
       </div>
-      <div className="flex  my-8 gap-4 overflow-hidden duration-500">
+      <div className="flex  my-8 gap-4 overflow-hidden border-b-2 duration-500">
         {data.map((d, i) => {
-          return (
-            <Card
-              {...d}
-              slide={slide}
-              //   nextSlide={nextSlide}
-              //   prevSlide={prevSlide}
-            ></Card>
-          );
+          return <Card {...d} slide={slide}></Card>;
         })}
       </div>
     </div>

@@ -193,18 +193,12 @@ const Online = () => {
           Restaurants With Online Delivery
         </div>
       </div>
-      <div className="flex  my-8 gap-4 duration-500">
+      <div className="grid grid-cols-4 gap-3">
         {data.map((d, i) => {
-          return (
-            <Card
-              {...d}
-              slide={slide}
-              //   nextSlide={nextSlide}
-              //   prevSlide={prevSlide}
-            ></Card>
-          );
+          return <Card {...d}></Card>;
         })}
       </div>
+      <hr />
     </div>
   );
 };

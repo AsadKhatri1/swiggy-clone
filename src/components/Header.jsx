@@ -31,7 +31,7 @@ const Header = () => {
         ></div>
       </div>
 
-      <header className="p-3 shadow-xl">
+      <header className="p-3 shadow-xl sticky top-0 z-[999] bg-white">
         <div className="max-w-[1200px] mx-auto flex items-center">
           <div className="w-[100px]">
             <img src={logo} alt="y" className="w-100 h-[55px]" />
