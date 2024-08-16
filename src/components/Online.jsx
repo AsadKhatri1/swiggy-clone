@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Card from "./Card";
 
@@ -186,11 +186,22 @@ const Online = () => {
       setSlide(slide + 4);
     }
   };
+
   return (
     <div className="max-w-[1200px] mx-auto">
       <div className="flex items-center justify-between w-full mt-5">
         <div className="font-bold text-3xl">
           Restaurants With Online Delivery
+        </div>
+      </div>
+      <div>
+        <div>
+          <div className="flex gap-4 max-w-[1000px] my-3">
+            <button className="rounded-md px-3 py-1 shadow-md">Fliter</button>
+            <button className="rounded-md px-3 py-1 shadow-md">Sort By</button>
+            <button className="rounded-md px-3 py-1 shadow-md">Fliter</button>
+            <button className="rounded-md px-3 py-1 shadow-md">Sort By</button>
+          </div>
         </div>
       </div>
       <div className="grid grid-cols-4 gap-3">
